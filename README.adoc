@@ -161,4 +161,5 @@ Don't hesitate to create an issue or see
 
 
 
-docker-compose -f docker-compose-mysql.yml exec -it kafka /bin/bash -e
+docker exec -it eventuate-tram-sagas-examples-customers-and-orders-mysql-1 /bin/bash
+mysql --user=root --password=$MYSQL_ROOT_PASSWORD
