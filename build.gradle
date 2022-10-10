@@ -54,7 +54,7 @@ dockerCompose {
     mysqlinfrastructure {
         projectName = null
         useComposeFiles = ["docker-compose-mysql.yml"]
-        startedServices = ["cdc-service", "zipkin"]
+        startedServices = ["cdc-service"]//, "zipkin"]
     }
     mysql {
         projectName = null
