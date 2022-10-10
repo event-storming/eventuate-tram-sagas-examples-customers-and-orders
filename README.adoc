@@ -160,6 +160,16 @@ Don't hesitate to create an issue or see
 * http://eventuate.io/contact.html[Contact us].
 
 
+./gradlew mysqlComposeUp
 
 docker exec -it eventuate-tram-sagas-examples-customers-and-orders-mysql-1 /bin/bash
 mysql --user=root --password=$MYSQL_ROOT_PASSWORD
+use eventuate
+
+docker exec -it eventuate-tram-sagas-examples-customers-and-orders-kafka-1 /bin/bash
+cd /usr/local/kafka_2.13-3.2.3/bin/
+
+
+
+docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
+
